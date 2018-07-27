@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Frontend zadatak</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+</head>
+<body>
+	
+	<div class="header">
+		<div class="left-h">
+			<h1>Books</h1>
+		</div>
+		<div class="right-h">
+			<button class="btn btn-grid-list" onclick="addClassFunction()">
+				<i class="material-icons md-24" id="icon">view_list</i>
+			</button>
+		</div>
+	</div>
+
+	<div class="container">
+
+			<div class="col-3">
+				  	<div class="book">
+						<div class="first">
+							<p class="top-title">Cover</p>
+						</div>
+						<div class="second">
+							<p class="title top-title">Title</p>
+					  		<p class="quote top-title">Quote</p>
+					  		<p class="author top-title">Author</p>
+						</div>  
+						<div class="footer">
+							<p class="top-title">Likes</p>
+						</div>
+						<!-- end footer -->
+					</div>
+					<!-- end book-box -->
+			</div>
+
+			<div class="col-3">
+				  	<div class="first-four book">
+						<div class="first">
+							<img src="book.svg" alt="book">
+						</div>
+						<div class="second">
+							<h5 class="title">The Wizard of Oz</h5>
+					  		<p class="quote">
+					  		Dorothy found herself riding easily between two of the biggest Monkeys, one of them the King himself. They had made a chair of their hands and were careful not to hurt her. "Why do you have to obey the charm of the Golden Cap?"
+					  		</p>
+					  		<p class="author">L. Frank Baum</p>
+				   		</div>  
+						<div class="footer">
+							<div class="left">
+								<span class="star "><i class=" material-icons md-22">star</i></span>
+								<span class="star-num ">16</span>
+							</div>
+							<div class="right">
+								<button id="b1" class="btn-dropdown btn-right btn"  onclick="dropdownFunction()"> 
+									<i  class="material-icons md-24 dots">more_horiz</i>
+								</button>
+							</div>
+						</div>
+						<!-- end footer -->
+
+
+					</div>
+					<ul id="d1" class="dropdown-content">
+							<li><a href="#" class="list">Edit book details</a></li>
+							<li><a href="#" class="list">Duplicate book</a></li>
+							<li><a href="#" class="list">Move book</a></li>				
+							<li><a href="#" class="list">Delete book
+								<br /><span class="sublist">Delete this book permanently</span></a>
+							</li>				
+					</ul>
+
+					<!-- end book-box -->
+			</div>
+
+			<div class="col-3">
+				  	<div class="first-four book">
+						<div class="first">
+							<img src="book.svg" alt="book">
+						</div>
+						<div class="second">
+							<h5 class="title">Mobi Dick</h5>
+				  			<p class="quote">
+				  			Round the world! There is much in that sound to inspire proud feelings; but whereto does all that circumnavigation conduct? Only through numberless perils to the very point whence we started, where those that we left behind secure, where all the time before us.
+				  			</p>
+				  			<p class="author">Herman Melville</p>
+						</div>  					
+						<div class="footer">
+							<div class="left">
+								<span class="star"><i class="material-icons md-22 ">star</i></span>
+								<span class="star-num ">28</span>
+							</div>
+							<div class="right">
+								<button id="b2" class="btn-dropdown btn" onclick="dropdownFunction()"> 
+									<i class="material-icons md-24 dots ">more_horiz</i>
+								</button>
+								
+							</div>
+						</div>
+						<!-- end footer -->
+					</div>
+					<ul id="d2" class="dropdown-content">
+							<li><a href="#" class="list">Edit book details</a></li>
+							<li><a href="#" class="list">Duplicate book</a></li>
+							<li><a href="#" class="list">Move book</a></li>				
+							<li><a href="#" class="list">Delete book
+								<br /><span class="sublist">Delete this book permanently</span></a>
+							</li>				
+					</ul>
+					<!-- end book-box -->				
+			</div>
+
+			<div class="col-3">			
+				  	<div class="first-four book">
+						<div class="first">
+							<img src="book.svg" alt="book">
+						</div>
+						<div class="second">
+							<h5 class="title">The War of the Worlds</h5>
+				  			<p class="quote">
+				  			"What news from the common?" I said. "People seem fair silly about the common, said the woman over the gate."
+				  			</p>
+				  			<p class="author">H. G. Wells</p>
+						</div>  					
+						<div class="footer">
+							<div class="left">
+								<span class="star"><i class="material-icons md-22 ">star</i></span>
+								<span class="star-num ">19</span>
+							</div>
+							<div class="right">
+		
+								<button id="b3" class="btn-dropdown btn" onclick="dropdownFunction()"> 
+									<i class="material-icons md-24 dots ">more_horiz</i>
+								</button>
+								
+							</div>
+						</div>
+						<!-- end footer -->
+					</div>
+					<!-- end book-box -->
+					<ul id="d3" class="dropdown-content">
+							<li><a href="#" class="list">Edit book details</a></li>
+							<li><a href="#" class="list">Duplicate book</a></li>
+							<li><a href="#" class="list">Move book</a></li>				
+							<li><a href="#" class="list">Delete book
+								<br /><span class="sublist">Delete this book permanently</span></a>
+							</li>				
+					</ul>				
+			</div>
+
+			<div class="col-3">				
+				  	<div class="first-four book">
+						<div class="first">
+							<img src="book.svg" alt="book">
+						</div>
+						<div class="second">
+							<h5 class="title">At the Earth's Core</h5>
+				  			<p class="quote">
+				  			I wondered why these agile creatures required connecting bridges between the trees, but later when I saw the motley aggregation of half-savage beasts which they kept within their village I realized the necessity for the pathways.
+				  			</p>
+				  			<p class="author">Edgar Rice Burroughs</p>
+						</div>  					
+						<div class="footer">
+							<div class="left">
+								<span class="star"><i class="material-icons md-22 ">star</i></span>
+								<span class="star-num ">8</span>
+							</div>
+							<div class="right">
+								<button id="b4" class="btn-dropdown btn" onclick="dropdownFunction()"> 
+									<i class="material-icons md-24 dots ">more_horiz</i>
+								</button>
+								
+							</div>
+						</div>
+						<!-- end footer -->
+					</div>
+					<!-- end book-box -->
+					<ul id="d4" class="dropdown-content">
+							<li><a href="#" class="list">Edit book details</a></li>
+							<li><a href="#" class="list">Duplicate book</a></li>
+							<li><a href="#" class="list">Move book</a></li>				
+							<li><a href="#" class="list">Delete book
+								<br /><span class="sublist">Delete this book permanently</span></a>
+							</li>				
+					</ul>				
+			</div>
+
+			<div class="col-3">				
+				  	<div class="book">
+						<div class="first">
+							<img src="book.svg" alt="book">
+						</div>
+						<div class="second">
+							<h5 class="title">A Princess of Mars</h5>
+				  			<p class="quote">
+		 		  			I drew rein on a little level promontory overlooking the trail below and to my left, and saw the party of pursuing savages disappearing around the point of a neighboring peak.
+				  			</p>
+				  			<p class="author">Edgar Rice Burroughs</p>
+						</div>  					
+						<div class="footer">
+							<div class="left">
+								<span class="star"><i class="material-icons md-22 ">star</i></span>
+								<span class="star-num ">11</span>
+							</div>
+							<div class="right">
+								<button id="b5" class="btn-dropdown btn" onclick="dropdownFunction()"> 
+									<i class="material-icons md-24 dots ">more_horiz</i>
+								</button>
+								
+							</div>
+						</div>
+						<!-- end footer -->
+					</div>
+					<!-- end book-box -->
+					<ul id="d5" class="dropdown-content">
+							<li><a href="#" class="list">Edit book details</a></li>
+							<li><a href="#" class="list">Duplicate book</a></li>
+							<li><a href="#" class="list">Move book</a></li>				
+							<li><a href="#" class="list">Delete book
+								<br /><span class="sublist">Delete this book permanently</span></a>
+							</li>				
+					</ul>				
+			</div>
+
+			<div class="col-3">				
+				  	<div class="book">
+						<div class="first">
+							<img src="book.svg" alt="book">
+						</div>
+						<div class="second">
+							<h5 class="title">Alice in Wonderland</h5>
+				  			<p class="quote">
+				  			The Hatter shook his head mournfully. 'Not I!' he replied. 'We quarrelled last March—just before HE went mad, you know—'
+				  			</p>
+				  			<p class="author">Lewis Carroll</p>
+						</div>  					
+						<div class="footer">
+							<div class="left">
+								<span class="star"><i class="material-icons md-22 ">star</i></span>
+								<span class="star-num ">21</span>
+							</div>
+							<div class="right">
+								<button id="b6" class="btn-dropdown btn" onclick="dropdownFunction()"> 
+									<i class="material-icons md-24 dots ">more_horiz</i>
+								</button>
+								
+							</div>
+						</div>
+						<!-- end footer -->
+					</div>
+					<!-- end book-box -->
+					<ul id="d6" class="dropdown-content">
+							<li><a href="#" class="list">Edit book details</a></li>
+							<li><a href="#" class="list">Duplicate book</a></li>
+							<li><a href="#" class="list">Move book</a></li>				
+							<li><a href="#" class="list">Delete book
+								<br /><span class="sublist">Delete this book permanently</span></a>
+							</li>				
+					</ul>				
+			</div>
+
+			<div class="col-3">				
+				  	<div class="book">
+						<div class="first">
+							<img src="book.svg" alt="book">
+						</div>
+						<div class="second">
+							<h5 class="title">The Scarlet Plague</h5>
+				  			<p class="quote">
+				  			It was at this point that Hare-Lip rose to his feet, an expression of huge contempt on his face. "Granser," he announced,"you make me sick with your gabble."
+				  			</p>
+				  			<p class="author">Jack London</p>
+						</div>  					
+						<div class="footer">
+							<div class="left">
+								<span class="star"><i class="material-icons md-22 ">star</i></span>
+								<span class="star-num ">13</span>
+							</div>
+							<div class="right">
+								<button id="b7" class="btn-dropdown btn" onclick="dropdownFunction()"> 
+									<i class="material-icons md-24 dots ">more_horiz</i>
+								</button>
+								
+							</div>
+						</div>
+						<!-- end footer -->
+					</div>
+					<!-- end book-box -->
+					<ul id="d7" class="dropdown-content">
+							<li><a href="#" class="list">Edit book details</a></li>
+							<li><a href="#" class="list">Duplicate book</a></li>
+							<li><a href="#" class="list">Move book</a></li>				
+							<li><a href="#" class="list">Delete book
+								<br /><span class="sublist">Delete this book permanently</span></a>
+							</li>				
+					</ul>				
+			</div>
+
+			<div class="col-3">				
+				  	<div class="book">
+						<div class="first">
+							<img src="book.svg" alt="book">
+						</div>
+						<div class="second">
+							<h5 class="title">Around the World in 80 Days</h5>
+				  			<p class="quote">
+				  			Nothing could be more simple. Indeed, it was all so simple that Fix and Passepartout felt their hearts beating as if they would crack. They were listening for the whistle agreed upon, when suddenly savage cries resounded in the air, accompanied by reports which certainly did not issue from the car where the duellists were.
+				  			</p>
+				  			<p class="author">Jules Verne</p>
+						</div>  					
+						<div class="footer">
+							<div class="left">
+								<span class="star"><i class="material-icons md-22 ">star</i></span>
+								<span class="star-num ">18</span>
+							</div>
+							<div class="right">
+								<button id="b8" class="btn-dropdown btn" onclick="dropdownFunction()"> 
+									<i class="material-icons md-24 dots ">more_horiz</i>
+								</button>
+								
+							</div>
+						</div>
+						<!-- end footer -->
+					</div>
+					<!-- end book-box -->	
+					<ul id="d8" class="dropdown-content">
+							<li><a href="#" class="list">Edit book details</a></li>
+							<li><a href="#" class="list">Duplicate book</a></li>
+							<li><a href="#" class="list">Move book</a></li>				
+							<li><a href="#" class="list">Delete book
+								<br /><span class="sublist">Delete this book permanently</span></a>
+							</li>				
+					</ul>			
+			</div>
+
+	</div>
+
+	<script src="script.js"></script>
+	
+
+</body>
+</html>

@@ -1,0 +1,472 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #eee;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+button:focus {
+	outline: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-20 { font-size: 20px; }
+.material-icons.md-22 { font-size: 22px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {
+	width: 8.33%;
+}
+.col-2 {
+	width: 16.66%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58.33%;
+}
+.col-8 {
+	width: 66.66%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.33%;
+}
+.col-11 {
+	width: 91.66%;
+}
+.col-12 {
+	width: 100%;
+}
+
+@media (max-width: 780px) {
+	.col-1, 
+	.col-2,
+	.col-3, 
+	.col-4, 
+	.col-5, 
+	.col-6, 
+	.col-7, 
+	.col-8, 
+	.col-9, 
+	.col-10, 
+	.col-11, 
+	.col-12 {
+		width: 50%;
+	}
+}
+
+@media (max-width: 480px) {
+	.col-1, 
+	.col-2,
+	.col-3, 
+	.col-4, 
+	.col-5, 
+	.col-6, 
+	.col-7, 
+	.col-8, 
+	.col-9, 
+	.col-10, 
+	.col-11, 
+	.col-12 {
+		width: 100%;
+	}
+}
+
+
+
+.header {
+	width: 90%;
+	margin: auto;
+    display: -webkit-flex; 
+    -webkit-justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    justify-content:space-between;
+    -webkit-align-items: center;
+    align-items: center; 
+}
+
+.header h1 {
+	font-size: 21px;
+	font-weight: 500;
+}
+
+.header .left-h {
+	margin-left: 15px;
+}
+
+.header .right-h {
+	margin-right: 10px;	
+}
+
+.btn {
+	border-radius: 0;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col-3  .book {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 0px 0px 1px 1px #ccc;
+ 
+}
+
+.col-3  .book > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+
+.col-3  .book .first {
+   -webkit-flex: 1;
+   flex: 1;
+   background-color: #88C5CC;
+   order: 1;
+
+}
+
+.col-3  .book .second {
+	display: flex;
+	flex-direction: column;
+    -webkit-flex: 4;
+    flex: 4;
+    background-color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    order: 2;
+    height: 250px;
+   
+}
+
+.col-3 .first-four .second{
+	height: 210px;
+}
+
+.col-3 .book .title {
+	font-size: 1em;
+	font-weight: 700;
+	margin: 15px 0;
+	
+}
+
+.col-3 .book .quote {
+	font-size: 0.85714em;
+	color: rgba(50, 50, 50, .8);
+	margin: 0 auto;
+  	overflow: hidden;
+}
+
+.col-3 .book .author {
+	font-size: 0.78571em;
+	color: rgba(50, 50, 50, .6);
+}
+
+ .col-3 .book .footer {
+	display: -webkit-flex; 
+    display: flex;
+    flex-direction: row; 
+    background-color: #B2EBEF;
+    order: 3;
+    padding: 0;
+
+}
+
+.col-3  .footer .left {
+	text-align: left;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left:  5px;
+	-webkit-flex: 4; 
+    flex: 4;
+    display: inline-flex;
+  	color: #555;
+  
+}
+
+.star {
+	
+	padding-right: 0;
+	cursor: pointer;
+
+}
+
+.star-num {
+
+	padding-left: 5px;
+	margin: auto 0;
+	font-size: 14px;
+}
+
+.col-3  .footer .right {
+	text-align: center;
+	-webkit-flex: 1;
+    flex: 1;
+    background-color: ;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+}
+
+.btn-dropdown {
+	border-radius: 0;
+	background-color: transparent;
+	cursor: pointer;
+	color: #666666;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+
+	
+}
+
+
+.dropdown-content {
+	display: none;
+    -webkit-flex: 1;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(40, 40, 40);
+    overflow: none;
+    z-index: 999;
+}
+
+
+.dropdown-content a {
+    color: #fff;
+    text-align: right;
+    font-size: 0.92857em;
+    padding: 10px;
+    
+}
+
+.dropdown-content a:first-child {
+    padding-top: 10px;
+}
+
+
+.dropdown-content .sublist {
+	font-size: 0.64285em;
+	padding-top: 0;
+	padding-bottom: 7px;
+	color: grey;
+	
+}
+
+.dropdown-content a:hover {
+	background-color: rgb(50, 50, 50);
+}
+
+
+
+.col-3:first-child {
+	display: none;
+}
+
+
+.show {
+	display: block;
+}
+
+
+/***** List *****/
+
+
+.list {
+	width: 100%;
+	padding: 0 15px;
+
+}
+
+.list > .book {
+	display: flex;
+	flex-direction: row;
+	box-shadow: 0px 0px 1px 1px #aaa;
+	height: 60px;
+}
+
+.list > .book > * {
+	padding: 0px !important;
+  	flex: 1 100% ;
+}
+
+.list > .book  .first {
+	order: 2;
+	flex: 1;
+	background-color: #88C5CC;
+	justify-content: center;
+	padding: 0 5px;
+	text-align: center;
+}
+
+.list > .book  .second {
+	display: flex;
+	flex-direction: row; 
+	order: 1;
+	flex: 16;
+
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
+
+	height: 60px !important;	
+	background-color: #fff;	
+
+
+}
+
+
+.list > .book .title {
+	order: 1;
+	flex: 5;
+	font-size: 1em;
+	font-weight: 700;
+	padding-left: 20px;
+	margin: auto 0;
+
+}
+
+.list > .book .quote {
+	flex: 7;
+	order: 2;
+	font-size: 0.85714em;
+	color: rgba(50, 50, 50, .8);
+	line-height: 1.5em;
+	
+  	display: -webkit-box;
+  	display: box;
+  	-webkit-line-clamp: 2;
+  	line-clamp: 2;
+  	-webkit-box-orient: vertical;
+  	box-orient: vertical;
+  	overflow: hidden;
+  	-moz-text-overflow: ellipsis;
+  	text-overflow: ellipsis;
+
+  
+}
+
+.list > .book .author {
+	flex: 4;
+	order: 3;
+	font-size: 0.78571em;
+	color: rgba(50, 50, 50, .8);
+	text-align: right;
+	padding-right: 40px;
+	margin: auto 0;
+}
+
+.list > .book  .footer {
+	display: flex;
+
+	order: 3;
+	flex: 4;
+	background-color: !important;
+    align-content: stretch;
+
+}
+
+.list .footer .left {
+	text-align: left;
+	padding-left: 20px;
+	-webkit-flex: 4; 
+    flex: 5;
+    background-color: white;
+    height: 100%;
+    align-items: center;
+}
+
+.list .footer .right {
+	-webkit-flex: 1; 
+    flex: 2;
+    background-color: white;
+    height: 100%;
+    
+}
+
+.list:first-child {
+	display: block;
+}
+
+.list:first-child .book {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	box-shadow: none;
+	margin: auto 0;
+	padding: auto 0;
+
+}
+
+.list:first-child .first,
+.list:first-child .second,
+.list:first-child .footer {
+	background-color: transparent !important;
+
+		
+}
+
+.list:first-child .footer .top-title {
+	padding-left: 20px;
+}
+
+.list:first-child .top-title {
+	font-size: 0.85714em;
+	font-weight: 500 !important;
+	color: black;
+	margin: auto 0;
+	
+	
+}
